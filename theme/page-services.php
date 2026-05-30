@@ -11,9 +11,8 @@
 
 <section class="lg:py-12 py-6">
     <div class="max-w-screen-lg mx-auto px-4">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
+        <!-- Flickity Slider -->
+        <div class="carousel" data-flickity='{ "groupCells": true }'>
                 <?php
                 if(have_rows('our_services')) :
                     while( have_rows('our_services')) : the_row();
@@ -21,7 +20,7 @@
                         $title = get_sub_field('card_title');
                         ?>
 
-                    <div class="swiper-slide">
+                    <div class="carousel-cell">
                         <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
                             <a href="#">
                                 <img class="rounded-t-base" src="<?php echo $image; ?>" alt="" />
@@ -35,7 +34,6 @@
                     </div>
             <?php endwhile; ?>
             <?php endif;?>
-            </div>
         </div>
     </div>
 </section>
