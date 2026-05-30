@@ -33,7 +33,8 @@
                             </h3>
                         </div>
                     </div>
-
+            <?php endwhile; ?>
+            <?php endif;?>
             </div>
         </div>
     </div>
