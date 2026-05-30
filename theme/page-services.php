@@ -20,8 +20,8 @@
                         $title = get_sub_field('card_title');
                         ?>
 
-                    <div class="carousel-cell">
-                        <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+                    <!-- <div class="carousel-cell"> -->
+                        <div class="carousel-cell block max-w-sm border border-default rounded-base shadow-xs">
                             <a href="#">
                                 <img class="rounded-t-base" src="<?php echo $image; ?>" alt="" />
                             </a>
@@ -31,7 +31,7 @@
                                 </h3>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
             <?php endwhile; ?>
             <?php endif;?>
         </div>
