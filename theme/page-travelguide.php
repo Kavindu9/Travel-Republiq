@@ -103,7 +103,7 @@
                         <img
                         src="<?php echo $icon; ?>"
                         alt="Icon"
-                        class="w-1/2 h-1/2 mb-4 object-cover">
+                        class="w-1/2 h-1/2 object-cover">
                     </div>
                     
                 <?php endif; ?>
