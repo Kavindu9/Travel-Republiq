@@ -96,14 +96,14 @@
                         
             ?>
 
-            <div class="flex flex-col items-center text-center px-6 py-8 bg-[#f5f5f5] rounded-[28px]">
+            <div class="flex flex-col items-center text-center px-6 py-8 bg-[#e3eded] rounded-[28px]">
                 <?php if ($icon): ?>
                     <div style="background:linear-gradient(#16717B,#80915A); width:66px; height:66px; display:flex; align-items:center; justify-content:center; border-radius:50%; margin:0 auto 12px auto;" bis_skin_checked="1">
                         <span style="font-size:20px; color:#fff;"><img src=""></span>
                         <img
                         src="<?php echo $icon; ?>"
                         alt="Icon"
-                        class="w-16 h-16 mb-4">
+                        class="w-1/2 h-1/2 mb-4">
                     </div>
                     
                 <?php endif; ?>
