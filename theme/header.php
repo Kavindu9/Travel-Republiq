@@ -36,14 +36,14 @@
 	height: 200px;
 	margin-right: 10px;
 	border-radius: 5px;
-	counter-increment: carousel-cell;
+	counter-increment: carousel-cell-image;
 	}
 
 	/* cell number */
-	.carousel-cell:before {
+	.carousel-cell-image:before {
 	display: block;
 	text-align: center;
-	content: counter(carousel-cell);
+	content: counter(carousel-cell-image);
 	line-height: 200px;
 	font-size: 80px;
 	color: white;
