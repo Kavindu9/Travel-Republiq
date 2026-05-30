@@ -20,17 +20,17 @@
                         $title = get_sub_field('card_title');
                         ?>
 
-                    <!-- <div class="carousel-cell"> -->
-                        <div class="carousel-cell block border border-default rounded-base">
+                    <!-- <div class="carousel-cell"> 
+                        <div class="carousel-cell block border border-default rounded-base">-->
                             <!-- <a href="#"> -->
-                                <img class="rounded-t-base" src="<?php echo $image; ?>" />
+                                <img class="carousel-cell rounded-t-base" src="<?php echo $image; ?>" />
                             <!-- </a> 
                             <div class="p-6 text-left">
                                 <h3 class="text-2xl font-normal text-[#1f2b3a] mb-2">
                                     <?php echo $title; ?>
                                 </h3>
-                            </div>-->
-                        </div>
+                            </div>
+                        </div>-->
                     <!-- </div> -->
             <?php endwhile; ?>
             <?php endif;?>
