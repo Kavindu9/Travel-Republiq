@@ -114,6 +114,8 @@
                     <?php echo $short_desc; ?>
                 </p>
         </div>
+        <?php endwhile; ?>
+        <?php endif;?>
     </div>
 </section>
 
