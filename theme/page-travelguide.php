@@ -80,7 +80,42 @@
     </div>
 </section>
 <section class="lg:py-10 py-5">
+    <div class="max-w-screen-lg mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-medium text-[#1f2b3a] mb-8 tracking-wide text-center">
+            PLAN YOUR PERFECT TRIP
+        </h2>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <?php
+                if(have_rows('plan_your_trip')) :
+                    while( have_rows('plan_your_trip')) : the_row();
+
+                        $icon = get_sub_field('icon_image');
+                        $title = get_sub_field('title');
+                        $short_desc = get_sub_field('short_desc');
+                        
+            ?>
+
+            <div class="flex flex-col items-center text-center px-6 py-8 bg-[#f5f5f5] rounded-[28px]">
+                <?php if ($icon): ?>
+                    <div style="background:linear-gradient(#16717B,#80915A); width:66px; height:66px; display:flex; align-items:center; justify-content:center; border-radius:50%; margin:0 auto 12px auto;" bis_skin_checked="1">
+                        <span style="font-size:20px; color:#fff;"><img src=""></span>
+                        <img
+                        src="<?php echo $icon; ?>"
+                        alt="Icon"
+                        class="w-16 h-16 mb-4">
+
+                    </div>
+                    
+                <?php endif; ?>
+                <h3 class="text-2xl font-semibold text-[#1f2b3a] mb-2">
+                    <?php echo $title; ?>
+                </h3>
+                <p class="text-[#1f2b3a] text-lg leading-[1.8rem]">
+                    <?php echo $short_desc; ?>
+                </p>
+        </div>
+    </div>
 </section>
 
 
