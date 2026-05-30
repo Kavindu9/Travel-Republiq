@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.STAGING_PASSWORD }}
           protocol: ftp
           port: 21
-          server-dir: /httpdocs/public_html/wp-content/themes/travel-republiq/
+          server-dir: /public_html/wp-content/themes/travel-republiq/
           retries: 3
           local-dir: ./theme/
           exclude: |
