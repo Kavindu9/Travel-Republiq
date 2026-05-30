@@ -35,7 +35,6 @@
 	width: 28%;
 	height: 200px;
 	margin-right: 10px;
-	background: #8C8;
 	border-radius: 5px;
 	counter-increment: carousel-cell;
 	}
