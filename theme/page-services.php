@@ -22,9 +22,9 @@
 
                     <!-- <div class="carousel-cell"> -->
                         <div class="carousel-cell block max-w-sm border border-default rounded-base shadow-xs">
-                            <a href="#">
+                            <!-- <a href="#"> -->
                                 <img class="rounded-t-base" src="<?php echo $image; ?>" alt="" />
-                            </a>
+                            <!-- </a> -->
                             <div class="p-6 text-left">
                                 <h3 class="text-2xl font-normal text-[#1f2b3a] mb-2">
                                     <?php echo $title; ?>
