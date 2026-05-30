@@ -104,7 +104,6 @@
                         src="<?php echo $icon; ?>"
                         alt="Icon"
                         class="w-16 h-16 mb-4">
-
                     </div>
                     
                 <?php endif; ?>
