@@ -91,7 +91,7 @@
                     while( have_rows('plan_your_trip')) : the_row();
 
                         $icon = get_sub_field('icon_image');
-                        $title = get_sub_field('title');
+                        $card_title = get_sub_field('title');
                         $short_desc = get_sub_field('short_desc');
                         
             ?>
