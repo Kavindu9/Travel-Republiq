@@ -33,7 +33,7 @@
 
 	.carousel-cell {
 	width: 28%;
-	height: 200px;
+	height: 300px;
 	margin-right: 10px;
 	border-radius: 5px;
 	counter-increment: carousel-cell-image;
