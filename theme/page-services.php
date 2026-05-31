@@ -24,10 +24,10 @@
                         <div class="carousel-cell block border border-default rounded-base">
                             <!-- <a href="#"> -->
                                 <!-- <div class="carousel-cell-image"> -->
-                                    <img class="carousel-cell-image rounded-t-base" src="<?php echo $image; ?>" />
+                                    <img class="carousel-cell-image rounded-t-base object-cover aspect-[3/4]" src="<?php echo $image; ?>" />
                                 <!-- </div> -->
                             <!-- </a>  -->
-                            <div class="p-6 text-left">
+                            <div class="py-3 text-left">
                                 <h3 class="text-2xl font-normal text-[#1f2b3a] mb-2">
                                     <?php echo $title; ?>
                                 </h3>
