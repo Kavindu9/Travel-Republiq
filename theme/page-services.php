@@ -21,7 +21,7 @@
                         ?>
 
                     <!-- <div class="carousel-cell">  -->
-                        <div class="carousel-cell block border border-default rounded-base">
+                        <div class="carousel-cell block border border-black rounded-md">
                             <!-- <a href="#"> -->
                                 <!-- <div class="carousel-cell-image"> -->
                                     <img class="carousel-cell-image rounded-t-base object-cover aspect-[3/4]" src="<?php echo $image; ?>" />
