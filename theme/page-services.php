@@ -23,9 +23,9 @@
                     <!-- <div class="carousel-cell">  -->
                         <div class="carousel-cell block border border-default rounded-base">
                             <!-- <a href="#"> -->
-                                <div class="carousel-cell-image">
-                                    <img class=" rounded-t-base" src="<?php echo $image; ?>" />
-                                </div>
+                                <!-- <div class="carousel-cell-image"> -->
+                                    <img class="carousel-cell-image rounded-t-base" src="<?php echo $image; ?>" />
+                                <!-- </div> -->
                             <!-- </a>  -->
                             <div class="p-6 text-left">
                                 <h3 class="text-2xl font-normal text-[#1f2b3a] mb-2">
