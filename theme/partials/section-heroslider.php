@@ -1,9 +1,8 @@
 <?php 
 //$images = have_rows('home_text_slider');
 if( have_rows('home_slider') ): ?>
-    <!-- <div class="swiper mySwiper h-80" style="background-image: url(<?php the_field('background_image');  ?>)"> -->
-        <div class="hero-carousel"
-            data-flickity='{
+    <!-- <div class="swiper mySwiper h-80" style="background-image: url(<?php //the_field('background_image');  ?>)"> -->
+        <div class="hero-carousel" data-flickity='{
                 "wrapAround": true,
                 "autoPlay": 5000,
                 "pageDots": true,
@@ -21,9 +20,7 @@ if( have_rows('home_slider') ): ?>
 
                     <?php if($image): ?>
 
-                        <img
-                            src="<?php echo esc_url($image['url']); ?>"
-                            alt="<?php echo esc_attr($image['alt']); ?>">
+                        <img src="<?php echo esc_url($image); ?>" >
 
                     <?php endif; ?>
 
@@ -63,8 +60,8 @@ if( have_rows('home_slider') ): ?>
 
     .hero-carousel .carousel-cell{
         width:100%;
-        height:80vh;
-        min-height:600px;
+        height:60vh;
+        min-height:450px;
         position:relative;
         overflow:hidden;
     }
@@ -118,15 +115,26 @@ if( have_rows('home_slider') ): ?>
         align-items:center;
         gap:12px;
 
-        padding:15px 32px;
+        /* padding:15px 32px; */
 
-        border:1px solid #fff;
+        /* border:1px solid #fff;
         border-radius:50px;
 
         color:#fff;
         text-decoration:none;
 
-        transition:.3s;
+        transition:.3s; */
+
+
+    padding: 10px 25px;
+    font-size: 14px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px 20px 5px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
     }
 
     .hero-btn:hover{
