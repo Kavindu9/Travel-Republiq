@@ -8,7 +8,7 @@
 
 <?php get_template_part('partials/section', 'herovideo'); ?>
 <?php get_template_part('partials/section', 'heroslider'); ?>
-<?php //get_template_part('partials/section', 'adventure'); ?>
+<?php get_template_part('partials/section', 'cards'); ?>
 <?php //get_template_part('partials/section', 'villa'); ?>
 <?php //get_template_part('partials/section', 'moments'); ?>
 <?php //get_template_part('partials/section', 'underwater'); ?>
