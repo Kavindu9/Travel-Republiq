@@ -1,0 +1,67 @@
+name: Deploy WordPress Theme
+
+on:
+  push:
+    branches:
+      - feature/ #new things
+      - develop  #staging
+      - master   # Production(live site)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build theme assets
+        run: npm run prod
+
+      # - name: Deploy via SFTP
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+
+      - name: Deploy to Staging
+        if: github.ref == 'refs/heads/develop'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5 
+        with:
+          server: ${{ secrets.STAGING_HOST }}
+          username: ${{ secrets.STAGING_USERNAME }}
+          password: ${{ secrets.STAGING_PASSWORD }}
+          protocol: ftp
+          port: 21
+          server-dir: /wp-content/themes/travel-republiq/
+          retries: 3
+          local-dir: ./theme/
+          exclude: |
+            **/.git*
+            **/.github*
+            **/node_modules/** 
+            **/*.map
+
+
+      # - name: Deploy to Production
+      #   if: github.ref == 'refs/heads/master'
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5 
+      #   with:
+      #     server: ${{ secrets.STAGING_HOST }}
+      #     username: ${{ secrets.LIVE_USERNAME }}
+      #     password: ${{ secrets.LIVE_PASSWORD }}
+      #     protocol: ftp
+      #     port: 21
+      #     server-dir: /httpdocs/public/wp-content/themes/travel-republiq/
+      #     retries: 3
+      #     local-dir: ./theme/
+      #     exclude: |
+      #       **/.git*
+      #       **/.github*
+      #       **/node_modules/** 
+      #       **/*.map
