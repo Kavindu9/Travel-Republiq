@@ -80,7 +80,7 @@
     </div>
 </section>
 <section class="lg:py-10 py-5">
-    <div class="max-w-screen-lg mx-auto px-4">
+    <div class="max-w-screen-xl mx-auto px-4">
         <h2 class="text-4xl md:text-5xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
             PLAN YOUR PERFECT TRIP
         </h2>
@@ -108,7 +108,7 @@
                     
                 <?php endif; ?>
                 <h3 class="text-2xl font-normal text-[#1f2b3a] mb-2">
-                    <?php echo $title; ?>
+                    <?php echo $card_title; ?>
                 </h3>
                 <p class="text-[#1f2b3a] text-lg leading-[1.8rem]">
                     <?php echo $short_desc; ?>
