@@ -91,7 +91,7 @@
                     while( have_rows('plan_your_trip')) : the_row();
 
                         $icon = get_sub_field('icon_image');
-                        $card_title = get_sub_field('title');
+                        $card_title = get_sub_field('title_card');
                         $short_desc = get_sub_field('short_desc');
                         
             ?>
@@ -103,7 +103,7 @@
                         <img
                         src="<?php echo $icon; ?>"
                         alt="Icon"
-                        class="w-1/2 h-1/2 object-cover">
+                        class="w-[55%] h-[55%] object-cover">
                     </div>
                     
                 <?php endif; ?>
