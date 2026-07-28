@@ -123,6 +123,32 @@
         <div class="text-lg prop" style="margin-bottom: 20px;">
             <?php the_field('experience_feature_des'); ?>            
         </div>
+
+        <div class="grid lg:grid-cols-2 lg:grid-rows-5 flex flex-wrap gap-4 p-7" style="
+            max-width: 1800px;
+            width: 100%;
+            height: auto;" bis_skin_checked="1">
+            <!-- <div style="flex: 1 1 300px;" bis_skin_checked="1"> -->
+                <?php
+                    if(have_rows('exclusive_advantages')) :
+                        while( have_rows('exclusive_advantages')) : the_row();
+                            $advantages = get_sub_field('advantages');
+                ?>
+
+                    <div class="flex items-center" style="margin-bottom: 10px;" bis_skin_checked="1">
+                        <div style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #16711B; display: flex; align-items: center; justify-content: center; margin-right: 10px;" bis_skin_checked="1">
+                        <img src="https://aquamarine-hippopotamus-184653.hostingersite.com/wp-content/uploads/2026/07/17550627013288.webp" style="width: 14px; height: 14px;">
+                        </div>
+                        <span style="font-size: 16px;"><?php echo $advantages; ?></span>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif;?>
+
+            <!-- </div> -->
+        </div>
+    </div>
+
+  </div>
     </div>
 </section>
 
