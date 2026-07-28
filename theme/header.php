@@ -19,7 +19,20 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<?php wp_head(); ?>
+
+	<style type="text/tailwindcss">
+		@theme {
+			--font-title: "montserrat", "sans-serif";
+			--font-body: "quicksand", "sans-serif"; 
+
+		}
+
+	</style>
+
+
 </head>
 
 <body <?php body_class(); ?>>

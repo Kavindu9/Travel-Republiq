@@ -34,8 +34,8 @@
                                 <img class="rounded-md object-cover" src="<?php echo $image; ?>" />
 
                             <!-- </a>  -->
-                                <div class="service-content">
-                                    <h5 class="text-xl font-normal text-[#1f2b3a] mb-2">
+                                <div class="service-content font-title font-semibold text-xl">
+                                    <h5 class="font-title font-semibold text-xl text-[#1f2b3a] mb-2">
                                         <?php echo $title; ?>
                                     </h5>
                                 </div>
@@ -49,20 +49,20 @@
 </section>
 <section class="lg:py-10 py-5">
     <div class="max-w-screen-lg mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
+        <h2 class="font-title text-4xl md:text-5xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
             Our Process
         </h2>
-        <div class="lg:py-6 py-4 text-center"><?php echo the_field('process_details'); ?></div>
+        <div class="lg:py-6 py-4 font-body text-lg text-center"><?php echo the_field('process_details'); ?></div>
         <div class="lg:py-6 py-4">
-            <h2 class="text-3xl text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
+            <h2 class="font-body text-3xl font-medium text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
         </div>
         <div class="lg:py-6 py-4">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
-                <div class="bg-[#f5f5f5] p-7 rounded-lg text-justify" style="min-width: 280px;">
+                <div class="bg-[#f5f5f5] p-7 rounded-lg text-justify font-body text-lg" style="min-width: 280px;">
                     <?php echo the_field('benefits_details'); ?>
                 </div>
                 <div class="bg-[#f5f5f5] p-7 rounded-lg text-white flex flex-col justify-center" style="min-width: 280px; background: linear-gradient(to right, #16717B, #80915A);">
-                    <h2 style="margin-bottom:20px; font-size:32px;">VIP Benefits</h2>
+                    <h2 class="font-title text-2xl" style="margin-bottom:20px; font-size:32px;">VIP Benefits</h2>
                     <?php
                 if(have_rows('benefits')) :
                     while( have_rows('benefits')) : the_row();
@@ -74,7 +74,7 @@
                             <div style="width:40px; height:40px; border-radius:50%; background:#ffffff; display:flex; align-items:center; justify-content:center; margin-right:15px;" bis_skin_checked="1">
                                 <img src="<?php echo $be_image; ?>" style="width:24px; height:24px; object-fit:contain;">
                             </div>
-                            <span style="font-size:15px;"><?php echo $be_title; ?></span>
+                            <span class="font-body text-lg" style="font-size:15px;"><?php echo $be_title; ?></span>
                         </div>
 
                     <?php endwhile; ?>
@@ -95,8 +95,8 @@
                 <?php endif; ?>
             </div>
             <div>
-                <h3 class="text-left" style="font-size: 32px; margin-bottom: 10px;"><?php echo esc_html( get_field('ex_title') ); ?></h3>
-                <div class="text-justify" style="font-size: 16px; color: #555; line-height: 1.6;"><?php the_field('exp_desc'); ?></div>
+                <h3 class="text-left font-body font-semibold text-3xl" style="margin-bottom: 10px;"><?php echo esc_html( get_field('ex_title') ); ?></h3>
+                <div class="text-justify font-body text-lg" style="color: #555; line-height: 1.6;"><?php the_field('exp_desc'); ?></div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5" style="max-width: 600px;">
                     <?php
                         if(have_rows('experience_fearures')) :
@@ -108,7 +108,7 @@
                             <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(#16717B, #80915A); display: flex; align-items: center; justify-content: center; margin-right: 12px;" bis_skin_checked="1">
                                 <img src="<?php echo $exp_image; ?>">
                             </div>
-                            <span style="font-size:16px; font-weight:500;"><?php echo $exp_title; ?></span>
+                            <span class="font-body text-lg" style="font-size:16px; font-weight:500;"><?php echo $exp_title; ?></span>
                         </div>
                         <?php endwhile; ?>
                     <?php endif;?>
@@ -119,8 +119,8 @@
 </section>
 <section class="lg:py-10 py-5">
     <div class="max-w-screen-lg mx-auto px-4">     
-        <h2 style="font-size: 32px; margin-bottom: 5px;"><?php echo esc_html( get_field('experience_feature_title') ); ?></h2>
-        <div class="text-lg prop" style="margin-bottom: 20px;">
+        <h2 class="font-title font-semibold text-3xl" style="font-size: 32px; margin-bottom: 5px;"><?php echo esc_html( get_field('experience_feature_title') ); ?></h2>
+        <div class="text-lg font-body prop" style="margin-bottom: 20px;">
             <?php the_field('experience_feature_des'); ?>            
         </div>
 
@@ -139,7 +139,7 @@
                         <div style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #16711B; display: flex; align-items: center; justify-content: center; margin-right: 10px;" bis_skin_checked="1">
                         <img src="https://aquamarine-hippopotamus-184653.hostingersite.com/wp-content/uploads/2026/07/17550627013288.webp" style="width: 14px; height: 14px;">
                         </div>
-                        <span style="font-size: 16px;"><?php echo $advantages; ?></span>
+                        <span class="font-body text-lg" style="font-size: 16px;"><?php echo $advantages; ?></span>
                     </div>
                 <?php endwhile; ?>
             <?php endif;?>

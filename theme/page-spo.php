@@ -52,13 +52,15 @@
     <div class="relative left-1/2 w-screen bg-cover bg-center flex items-center justify-center text-white align-center overflow-hidden" style="
         margin-left:-50vw;
         min-height: clamp(280px, 45vw, 560px);
-        background-image: url('<?php echo the_field('special_offer_image'); ?>');
+        background: linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+        ),url('<?php echo the_field('special_offer_image'); ?>');
         padding: clamp(10px, 4vw, 24px);
         box-sizing: border-box;
         margin-top: clamp(20px, 5vw, 40px);" bis_skin_checked="1">
         
         <!-- Dark Overlay -->
-        <div class="absolute" style="=inset: 0; background: rgba(0, 0, 0, 0.55); z-index: 1;" bis_skin_checked="1"></div>
+        <div class="absolute" style="=inset: 0; background: #000000a6; z-index: 1;" bis_skin_checked="1"></div>
         
         <!-- Content -->
         <div class="relative" style="width: min(90%, 980px); z-index: 2;" bis_skin_checked="1">
