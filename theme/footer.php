@@ -448,7 +448,7 @@
             </div>
             <div class="privacy-text" style="font-family: 'Montserrat', sans-serif; color: #3d3333; font-size: 14px; margin-top: 8px;">
 
-                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <div class="social-links flex text-center text-md-right pt-3 lg:pt-0">
     
                  <a href="#" title="Instagram" data-bs-placement="top" target="_blank" class="social-instagram me-3" style="background-color: #FFFFFF36 ;"><i class="bi bi-instagram" style="color:#ffffff;"></i></a>
     
@@ -474,6 +474,12 @@
 </div><!-- #page -->
 
 <style>
+
+@media (min-width: 768px) {
+    .me-md-auto {
+        margin-right: auto !important;
+    }
+}
 
 	#footer .footer-bottom, .section-border-top {
 		border-top: 1px solid #edf3f2;
