@@ -30,13 +30,13 @@
                 <img class="w-full object-cover block" src="<?php echo $backg_image; ?>" style="height: clamp(180px, 28vw, 300px);">
 
                 <!-- badge -->
-                <div class="absolute top-3 left-3 font-bold" style="background:#fff; color:#000; font-size:clamp(11px, 1.8vw, 13px);padding:6px 12px; border-radius:6px;" bis_skin_checked="1"><?php echo $offer_discount; ?>% OFF</div>
+                <div class="font-body text-base absolute top-3 left-3 font-bold" style="background:#fff; color:#000;padding:6px 12px; border-radius:6px;" bis_skin_checked="1"><?php echo $offer_discount; ?>% OFF</div>
 
                 <!-- text + button -->
                 <div class="absolute bottom-4 left-4 right-4" style="color:#fff;" bis_skin_checked="1">
-                    <div style="font-size: clamp(18px, 3.2vw, 28px); text-shadow: rgba(0, 0, 0, 0.26) 0px 2px 10px; line-height: 1.2; max-width: 20ch; text-align: left;" bis_skin_checked="1"><?php echo $offer_title; ?></div>
+                    <div class="font-title text-3xl" style="text-shadow: rgba(0, 0, 0, 0.26) 0px 2px 10px; line-height: 1.2; max-width: 20ch; text-align: left;" bis_skin_checked="1"><?php echo $offer_title; ?></div>
 
-                    <a href="<?php echo $booking_link; ?>" class="mt-2.5 text-white font-bold items-center gap-2" style="padding:10px 20px; background:linear-gradient(to right ,#0F6F7D,#798E5C); border:none; border-radius:5px 20px 5px 20px; font-size:clamp(13px, 2.2vw, 16px); cursor:pointer; display:inline-flex;text-decoration:none;">
+                    <a href="<?php echo $booking_link; ?>" class="font-body mt-2.5 text-white font-bold items-center gap-2" style="padding:10px 20px; background:linear-gradient(to right ,#0F6F7D,#798E5C); border:none; border-radius:5px 20px 5px 20px; font-size:clamp(13px, 2.2vw, 16px); cursor:pointer; display:inline-flex;text-decoration:none;">
                     Book Now
                     <span class="arrow">↗</span>
                     </a>
@@ -64,13 +64,85 @@
         
         <!-- Content -->
         <div class="relative" style="width: min(90%, 980px); z-index: 2;" bis_skin_checked="1">
-        <h1 class="font-medium text-center" style="font-size: clamp(20px, 5vw, 42px); margin: 0 0 clamp(8px, 2vw, 16px) 0; line-height:1.15;">
+        <h1 class="font-title font-medium text-center" style="font-size: clamp(20px, 5vw, 42px); margin: 0 0 clamp(8px, 2vw, 16px) 0; line-height:1.15;">
             <?php echo the_field('special_offer_title'); ?>
         </h1>
-            <p class="text-center" style="font-size: clamp(13px, 2.4vw, 18px); line-height: 1.65; margin: 0 0 clamp(12px, 2.6vw, 20px) 0;"><?php echo the_field('special_offer_details'); ?></p>
+            <p class="font-body text-lg text-center" style="font-size: clamp(13px, 2.4vw, 18px); line-height: 1.65; margin: 0 0 clamp(12px, 2.6vw, 20px) 0;"><?php echo the_field('special_offer_details'); ?></p>
         </div>
   </div>
 </section>
+
+<section>
+    <div class="news-panel bg-[#eef6f6] rounded-4 p-4 p-lg-5 my-4">
+        <h2 class="font-title text-4xl  text-center mb-4 mb-lg-5"><?php echo esc_html( get_field('page_headline') ); ?></h2>
+
+            <div class="flex flex-wrap mt-6 mx-6 items-start gap-6 align-items-start">
+                <div class="col-lg-7">
+
+            <?php
+                if(have_rows('news_posts')) :
+                    while( have_rows('news_posts')) : the_row();
+                        $news_title = get_sub_field('news_title');
+                        $news_des = get_sub_field('news_details');
+                        $news_link = get_sub_field('news_url');
+            ?>
+
+                    <a href="<?php echo $news_link; ?>" class="text-decoration-none text-reset">
+                        <div class="bg-white rounded-4 shadow-sm p-3 p-lg-4 mb-3">
+                            <div class="d-flex gap-3">
+                                <div class="flex-grow-1">
+                                    <h5 class="font-title font-semibold text-xl mb-2" style="font-weight:700;">
+                                        <?php echo $news_title; ?>
+                                    </h5>
+                                    <p class="font-body text-lg mb-2 text-muted" style="font-weight:500;">
+                                        <?php echo $news_des; ?>
+                                    </p>
+                                    <div class="small" style="color:#0f766e"><?php the_date( 'd M y', '', '' ); ?></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+            <?php endwhile; ?>
+            <?php endif;?>
+                                                                                                    
+                    <div class="mt-4 d-flex justify-content-center"></div>
+                </div>
+
+                <div class="col-lg-5" style="">
+                    <div class="ratio relative w-full ratio-[4/3] rounded-4 overflow-hidden shadow-sm">
+                        <?php if( get_field('news_image') ): ?>
+                            <img src="<?php the_field('news_image'); ?>" alt="News Hero" class="w-100 h-500" style="object-fit:cover;">
+                        <?php endif; ?>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<style>
+    @media (min-width: 992px) {
+        .col-lg-5 {
+            flex: 0 0 auto;
+            width: 41.66666667%;
+        }
+    }
+
+    /* .ratio::before {
+        display: block;
+        padding-top: var(--bs-aspect-ratio);
+        content: "";
+    } */
+
+    .ratio>* {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+</style>
 
 <?php endwhile; ?>
 <?php else : ?>
