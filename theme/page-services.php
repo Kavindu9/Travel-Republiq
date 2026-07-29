@@ -105,7 +105,7 @@
                                 $exp_title = get_sub_field('exp_name');
                     ?>
                         <div style="display: flex; align-items: center;" bis_skin_checked="1">
-                            <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(#16717B, #80915A); display: flex; align-items: center; justify-content: center; margin-right: 12px;" bis_skin_checked="1">
+                            <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 12px;" bis_skin_checked="1">
                                 <img src="<?php echo $exp_image; ?>">
                             </div>
                             <span class="font-body text-lg" style="font-size:16px; font-weight:500;"><?php echo $exp_title; ?></span>
