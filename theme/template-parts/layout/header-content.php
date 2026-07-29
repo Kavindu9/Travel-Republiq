@@ -12,7 +12,7 @@
 <header id="masthead">
 	<!-- Navigation Container -->
 <nav class="bg-[#fff] text-white" style="box-shadow: 0 2px 15px rgba(0, 0, 0, .1);">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between h-16">
       
       <!-- Logo -->
@@ -47,6 +47,17 @@
     
   </div>
 </nav>
+
+<style>
+	#masthead {
+		transition: .5s;
+		z-index: 997;
+		padding: 15px 0 0;
+		top: 41px;
+		box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+	}
+
+</style>
 	
 
 </header>
