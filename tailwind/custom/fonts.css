@@ -3,3 +3,52 @@
  *
  * These will be added immediately before Tailwind’s `base` layer.
  */
+
+
+ @font-face {
+    font-family: "montserrat";
+    src: url("fonts/montserrat/Montserrat-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("fonts/montserrat/Montserrat-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url("fonts/quicksand/Quicksand_Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url("fonts/quicksand/Quicksand_Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url("fonts/quicksand/Quicksand-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url("fonts/quicksand/Quicksand-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

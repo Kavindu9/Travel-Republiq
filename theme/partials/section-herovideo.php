@@ -10,8 +10,8 @@
 
 
     <div class="hero-wrap absolute inset-0 w-full h-full grid place-items-center">
-        <div class="nova-branding text-white container max-w-screen-xl h-[35%] w-2/4 grid place-items-center  mx-auto my-auto px-4 sm:px-2 border-t-4 border-b-4 border-white">
-            <h1 class="text-center text-4xl text-white">DISCOVER MALDIVES WITH US</h1>
+        <div class="font-title text-white container max-w-screen-xl h-[35%] w-2/4 grid place-items-center  mx-auto my-auto px-4 sm:px-2 border-t-4 border-b-4 border-white">
+            <h1 class="font-title text-center text-4xl text-white">DISCOVER MALDIVES WITH US</h1>
         </div>
     </div>
 </div>

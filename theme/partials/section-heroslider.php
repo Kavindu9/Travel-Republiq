@@ -29,14 +29,14 @@ if( have_rows('home_slider') ): ?>
                     <div class="slide-content">
 
                         <?php if($heading): ?>
-                            <h2><?php echo esc_html($heading); ?></h2>
+                            <h2 class="font-title text-2xl text-white"><?php echo esc_html($heading); ?></h2>
                         <?php endif; ?>
 
                         <?php if($subheading): ?>
-                            <p><?php echo esc_html($subheading); ?></p>
+                            <p class="font-body text-lg text-white"><?php echo esc_html($subheading); ?></p>
                         <?php endif; ?>
 
-                        <a href="<?php echo site_url('/contact'); ?>" class="hero-btn">
+                        <a href="<?php echo site_url('/contact'); ?>" class="hero-btn font-body text-base">
                             Contact Us
                             <span class="arrow">↗</span>
                         </a>

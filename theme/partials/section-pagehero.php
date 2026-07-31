@@ -1,17 +1,41 @@
-<section class="top-banner-section grid content-center justify-center">
-  <!-- The CSS grid area that displays the image (layer 1) -->
+<!-- <section class="top-banner-section grid content-center justify-center">
   <div class="banner-image-div">
     <img class="banner-image" src="<?php the_field('page_hero_image');  ?>" alt="Banner Image" />
   </div>
-  <!-- The CSS grid area that displays the semi-transparent gradient overlay (layer 2) -->
+
   <div class="banner-overlay-div"></div>
-  <!-- The CSS grid area that displays the content (layer 3) -->
+
   <div class="banner-text-div lg:px-8 px-4">
     <span class="banner-text">
       <h1 class="text-3xl"><?php echo esc_html(get_field('page_title')); ?></h1>
     </span>
   </div>
-</section>
+</section> -->
+
+<div id="page-cover" class="page-cover w-full relative bg-cover bg-no-repeat bg-center" style="
+    height: 350px;
+    background-image: url('<?php the_field('page_hero_image');  ?>');
+    background-color: #000000;
+">
+    <div class="breadcrumb-overlay absolute top-1/2 text-left" style="
+        left: 30px;
+        transform: translateY(-50%);
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px 30px;
+        border-radius: 10px;
+    ">
+                    <!-- <h2 style="margin: 0 0 10px 0;">News</h2> -->
+      <ol style="list-style: none; padding: 0; margin: 0;">
+          <li style="display: inline;">
+              <a href="https://aquamarine-hippopotamus-184653.hostingersite.com" style="color: #fff;">
+                  Home
+              </a>
+          </li>
+          <li style="display: inline;"> / <?php the_title(); ?></li>
+      </ol>
+    </div>
+</div>
 
 <style>
     .top-banner-section {

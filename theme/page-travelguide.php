@@ -31,11 +31,11 @@
 
                 <!-- Content Section -->
                 <div <?php echo !$is_odd ? 'class="lg:order-last"' : ''; ?>>
-                    <h2 class="text-4xl md:text-5xl font-medium text-[#1f2b3a] mb-8 tracking-wide">
+                    <h2 class="font-title font-semibold text-3xl md:text-4xl text-[#1f2b3a] mb-8 tracking-wide">
                         <?php echo $title; ?>
                     </h2>
 
-                    <div class="space-y-6 text-[#1f2b3a] text-lg leading-[2.2rem]">
+                    <div class="font-body text-lg space-y-6 text-[#1f2b3a] text-lg leading-[2.2rem]">
                         <?php echo $body_desc; ?>
                     </div>
                 </div>
@@ -80,8 +80,8 @@
     </div>
 </section>
 <section class="lg:py-10 py-5">
-    <div class="max-w-screen-lg mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
+    <div class="max-w-screen-xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
             PLAN YOUR PERFECT TRIP
         </h2>
 
@@ -91,7 +91,7 @@
                     while( have_rows('plan_your_trip')) : the_row();
 
                         $icon = get_sub_field('icon_image');
-                        $card_title = get_sub_field('title');
+                        $card_title = get_sub_field('title_card');
                         $short_desc = get_sub_field('short_desc');
                         
             ?>
@@ -103,14 +103,14 @@
                         <img
                         src="<?php echo $icon; ?>"
                         alt="Icon"
-                        class="w-1/2 h-1/2 object-cover">
+                        class="w-[55%] h-[55%] object-cover">
                     </div>
                     
                 <?php endif; ?>
-                <h3 class="text-2xl font-normal text-[#1f2b3a] mb-2">
-                    <?php echo $title; ?>
+                <h3 class="font-title text-2xl font-normal text-[#1f2b3a] mb-2">
+                    <?php echo $card_title; ?>
                 </h3>
-                <p class="text-[#1f2b3a] text-lg leading-[1.8rem]">
+                <p class="text-[#1f2b3a] font-body text-lg leading-[1.8rem]">
                     <?php echo $short_desc; ?>
                 </p>
         </div>
