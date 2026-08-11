@@ -4,6 +4,21 @@
  * These will be added immediately before Tailwind’s `base` layer.
  */
 
+@font-face {
+    font-family: "cormorant";
+    src: url("fonts/CormorantGaramond/Cormorant Garamond.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "cormorant";
+    src: url("fonts/CormorantGaramond/Cormorant_Garamond_Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
  @font-face {
     font-family: "montserrat";
