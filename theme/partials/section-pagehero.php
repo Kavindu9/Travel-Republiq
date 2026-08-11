@@ -27,12 +27,12 @@
     ">
                     <!-- <h2 style="margin: 0 0 10px 0;">News</h2> -->
       <ol style="list-style: none; padding: 0; margin: 0;">
-          <li style="display: inline;">
+          <!-- <li style="display: inline;">
               <a href="https://aquamarine-hippopotamus-184653.hostingersite.com" style="color: #fff;">
                   Home
               </a>
-          </li>
-          <li style="display: inline;"> / <?php the_title(); ?></li>
+          </li> -->
+          <li class="font-body font-normal text-2xl" style="display: inline;"><?php the_title(); ?></li>
       </ol>
     </div>
 </div>
