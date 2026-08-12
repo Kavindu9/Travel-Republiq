@@ -34,8 +34,8 @@
                                 <img class="rounded-md object-cover" src="<?php echo $image; ?>" />
 
                             <!-- </a>  -->
-                                <div class="service-content font-title font-semibold text-xl">
-                                    <h5 class="font-title font-semibold text-3xl md:text-4xl text-[#1f2b3a] mb-2 text-center">
+                                <div class="service-content text-center">
+                                    <h5 class="font-title font-normal text-4xl md:text-3xl text-[#1f2b3a] mb-2 text-center">
                                         <?php echo $title; ?>
                                     </h5>
                                 </div>
@@ -52,13 +52,13 @@
         <h2 class="font-title text-4xl md:text-5xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
             Our Process
         </h2>
-        <div class="lg:py-6 py-4 font-body text-lg leading-[2.2rem] text-center"><?php echo the_field('process_details'); ?></div>
+        <div class="lg:py-6 py-4 font-body text-xl leading-[2.2rem] text-center"><?php echo the_field('process_details'); ?></div>
         <div class="lg:py-6 py-4">
-            <h2 class="font-title text-5xl md:text-4xl text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
+            <h2 class="font-title font-normal text-5xl md:text-4xl text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
         </div>
         <div class="lg:py-6 py-4">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
-                <div class="bg-[#f5f5f5] p-7 rounded-lg text-justify font-body text-lg leading-[2.2rem]" style="min-width: 280px;">
+                <div class="bg-[#f5f5f5] p-7 rounded-lg text-justify font-body text-xl leading-[2.2rem]" style="min-width: 280px;">
                     <?php echo the_field('benefits_details'); ?>
                 </div>
                 <div class="bg-[#f5f5f5] p-7 rounded-lg text-white flex flex-col justify-center" style="min-width: 280px; background: linear-gradient(to right, #16717B, #80915A);">
@@ -96,7 +96,7 @@
             </div>
             <div>
                 <h3 class="text-left font-title text-5xl md:text-4xl" style="margin-bottom: 10px;"><?php echo esc_html( get_field('ex_title') ); ?></h3>
-                <div class="text-justify font-body text-lg" style="color: #555; line-height: 1.6;"><?php the_field('exp_desc'); ?></div>
+                <div class="text-justify font-body text-xl" style="color: #555; line-height: 1.6;"><?php the_field('exp_desc'); ?></div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5" style="max-width: 600px;">
                     <?php
                         if(have_rows('experience_fearures')) :
@@ -108,7 +108,7 @@
                             <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 12px;" bis_skin_checked="1">
                                 <img src="<?php echo $exp_image; ?>">
                             </div>
-                            <span class="font-body text-lg" style="font-size:16px; font-weight:500;"><?php echo $exp_title; ?></span>
+                            <span class="font-body text-xl" style="font-size:16px; font-weight:500;"><?php echo $exp_title; ?></span>
                         </div>
                         <?php endwhile; ?>
                     <?php endif;?>
@@ -120,7 +120,7 @@
 <section class="lg:py-10 py-5">
     <div class="max-w-screen-lg mx-auto px-4">     
         <h2 class="font-title text-5xl md:text-4xl" style="font-size: 32px; margin-bottom: 5px;"><?php echo esc_html( get_field('experience_feature_title') ); ?></h2>
-        <div class="text-lg font-body prop" style="margin-bottom: 20px;">
+        <div class="text-xl font-body prop" style="margin-bottom: 20px;">
             <?php the_field('experience_feature_des'); ?>            
         </div>
 
@@ -139,7 +139,7 @@
                         <div style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #16711B; display: flex; align-items: center; justify-content: center; margin-right: 10px;" bis_skin_checked="1">
                         <img src="https://aquamarine-hippopotamus-184653.hostingersite.com/wp-content/uploads/2026/07/17550627013288.webp" style="width: 14px; height: 14px;">
                         </div>
-                        <span class="font-body text-lg" style="font-size: 16px;"><?php echo $advantages; ?></span>
+                        <span class="font-body text-xl" style="font-size: 16px;"><?php echo $advantages; ?></span>
                     </div>
                 <?php endwhile; ?>
             <?php endif;?>
@@ -168,10 +168,10 @@
 }
 
 .service-card{
-    display:flex;
+    /* display:flex; */
     flex-direction:column;
 
-    height:350px;      /* Fixed card height */
+    height:380px;      /* Fixed card height */
     background:#fff;
 }
 
@@ -192,7 +192,7 @@
 .service-content{
     padding:15px;
     flex:1;
-    display:flex;
+    /* display:flex; */
     align-items:flex-start;
 }
 
