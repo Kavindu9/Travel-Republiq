@@ -34,9 +34,9 @@
 
                 <!-- text + button -->
                 <div class="absolute bottom-4 left-4 right-4" style="color:#fff;" bis_skin_checked="1">
-                    <div class="font-title text-3xl" style="text-shadow: rgba(0, 0, 0, 0.26) 0px 2px 10px; line-height: 1.2; max-width: 20ch; text-align: left;" bis_skin_checked="1"><?php echo $offer_title; ?></div>
+                    <div class="font-body font-normal text-2xl md:text-3xl" style="text-shadow: rgba(0, 0, 0, 0.26) 0px 2px 10px; line-height: 1.2; max-width: 20ch; text-align: left;" bis_skin_checked="1"><?php echo $offer_title; ?></div>
 
-                    <a href="<?php echo $booking_link; ?>" class="font-body mt-2.5 text-white font-bold items-center gap-2" style="padding:10px 20px; background:linear-gradient(to right ,#0F6F7D,#798E5C); border:none; border-radius:5px 20px 5px 20px; font-size:clamp(13px, 2.2vw, 16px); cursor:pointer; display:inline-flex;text-decoration:none;">
+                    <a href="<?php echo $booking_link; ?>" class="font-body text-xl leading-[2.2rem] mt-2.5 text-white font-bold items-center gap-2" style="padding:10px 20px; background:linear-gradient(to right ,#0F6F7D,#798E5C); border:none; border-radius:5px 20px 5px 20px; font-size:clamp(13px, 2.2vw, 16px); cursor:pointer; display:inline-flex;text-decoration:none;">
                     Book Now
                     <span class="arrow">↗</span>
                     </a>
@@ -64,17 +64,17 @@
         
         <!-- Content -->
         <div class="relative" style="width: min(90%, 980px); z-index: 2;" bis_skin_checked="1">
-        <h1 class="font-title font-medium text-center" style="font-size: clamp(20px, 5vw, 42px); margin: 0 0 clamp(8px, 2vw, 16px) 0; line-height:1.15;">
+        <h1 class="font-body font-normal text-2xl md:text-3xl text-center" style="margin: 0 0 clamp(8px, 2vw, 16px) 0; line-height:1.15;">
             <?php echo the_field('special_offer_title'); ?>
         </h1>
-            <p class="font-body text-lg text-center" style="font-size: clamp(13px, 2.4vw, 18px); line-height: 1.65; margin: 0 0 clamp(12px, 2.6vw, 20px) 0;"><?php echo the_field('special_offer_details'); ?></p>
+            <p class="font-body text-xl leading-[2.2rem] text-center" style="line-height: 1.65; margin: 0 0 clamp(12px, 2.6vw, 20px) 0;"><?php echo the_field('special_offer_details'); ?></p>
         </div>
   </div>
 </section>
 
 <section>
     <div class="news-panel bg-[#eef6f6] rounded-4 p-4 p-lg-5 my-4">
-        <h2 class="font-title text-4xl  text-center mb-4 mb-lg-5"><?php echo esc_html( get_field('page_headline') ); ?></h2>
+        <h2 class="font-body font-normal text-2xl md:text-3xl  text-center mb-4 mb-lg-5"><?php echo esc_html( get_field('page_headline') ); ?></h2>
 
             <div class="flex flex-wrap mt-6 mx-6 items-start gap-6 align-items-start">
                 <div class="col-lg-7">
@@ -94,10 +94,10 @@
                                     <h5 class="font-title font-semibold text-xl mb-2" style="font-weight:700;">
                                         <?php echo $news_title; ?>
                                     </h5>
-                                    <p class="font-body text-lg mb-2 text-muted" style="font-weight:500;">
+                                    <p class="font-body text-xl leading-[2.2rem] mb-2 text-muted" style="font-weight:500;">
                                         <?php echo $news_des; ?>
                                     </p>
-                                    <div class="small" style="color:#0f766e"><?php the_date( 'd M y', '', '' ); ?></div>
+                                    <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php the_date( 'd M y', '', '' ); ?></div>
                                 </div>
                             </div>
                         </div>
