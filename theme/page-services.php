@@ -74,7 +74,7 @@
                             <div style="width:40px; height:40px; border-radius:50%; background:#ffffff; display:flex; align-items:center; justify-content:center; margin-right:15px;" bis_skin_checked="1">
                                 <img src="<?php echo $be_image; ?>" style="width:24px; height:24px; object-fit:contain;">
                             </div>
-                            <span class="font-body text-xl" style="font-size:15px;"><?php echo $be_title; ?></span>
+                            <span class="font-body font-normal text-2xl" style="font-size:15px;"><?php echo $be_title; ?></span>
                         </div>
 
                     <?php endwhile; ?>
