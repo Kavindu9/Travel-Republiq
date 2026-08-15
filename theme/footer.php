@@ -470,7 +470,7 @@
                  <a href="#" title="Instagram" data-bs-placement="top" target="_blank" class="social-instagram me-3" style="background-color: #FFFFFF36 ;"><i class="bi bi-instagram" style="color:#ffffff;"></i></a>
     
         
-        <a href="#" title="Telegram" data-bs-placement="top" target="_blank" class="social-telegram me-3" style="background-color: #FFFFFF36;">
+        <!-- <a href="#" title="Telegram" data-bs-placement="top" target="_blank" class="social-telegram me-3" style="background-color: #FFFFFF36;">
         <img src="https://travels.mobilesapplication.com/assets/frontend/images/telegram.png" alt="Telegram" style="width: 20px;">
     </a>
     
@@ -478,7 +478,7 @@
     
         <a href="#" title="Bottom" data-bs-placement="top" target="_blank" class="social-bottom me-3" style="background-color: #FFFFFF36;">
         <img src="https://travels.mobilesapplication.com/assets\frontend\images\botim (1).png" alt="Bottom" style="width: 20px;">
-    </a>
+    </a> -->
 
 
 </div>
