@@ -18,9 +18,9 @@
 <footer id="footer" style="background: linear-gradient(to right, #15717B,#80915A);">
             <div class="footer-top">
             <div class="container mx-auto px-10">
-                <div class="row">
+                <div class="row  flex flex-wrap gap-4 lg:flex-row flex-col">
 
-                    <div class="lg:w-2/6 w-full">
+                    <div class="lg:w-[45%] w-full">
                         <div class="footer-contact-card">
                             <h4 class="font-body font-normal text-2xl md:text-3xl text-white footer-contact-title">Office Location</h4>
 
@@ -78,7 +78,7 @@
     box-shadow: 0 2px 15px rgba(25, 119, 204, .1);
 }
 
-						.row {
+.row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -360,7 +360,7 @@
 
 
 
-                    <div class="footer-links lg:w-1/4 w-full">
+                    <!-- <div class="footer-links lg:w-1/4 w-full">
 
                         <div class="footer-title">
                             <h4 class="font-body font-normal text-2xl md:text-3xl text-white">Quick Links</h4>
@@ -382,8 +382,8 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="footer-links lg:w-5/12 w-full">
+                    </div> -->
+                    <div class="footer-links lg:w-[45%] w-full">
                         <div class="footer-title">
                             <h4 class="font-body font-normal text-2xl md:text-3xl text-white">Newsletter</h4>
                             <form>
