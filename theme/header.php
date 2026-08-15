@@ -137,6 +137,12 @@
 		.social-links .social-instagram {
 			background: #8134af;
 		}
+
+		.prose{
+			font-family: var(--font-body);
+			font-size: 1.25rem;
+			font-weight: 400;
+		}
 	</style>
 
 	<?php get_template_part( 'template-parts/layout/header', 'content' ); ?>
