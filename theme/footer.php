@@ -48,9 +48,9 @@
 									</span>
                                     <div class="ci-text">
                                         <div class="ci-label font-body text-xl font-normal">Contact Us</div>
-                                        <a class="ci-value">
-                                            <span dir="ltr font-body text-lg font-normal">+960 7562222</span>
-                                        </a>
+                                        <p class="ci-value">
+                                            <span dir="ltr" class="font-body text-lg font-normal">+960 7562222</span>
+                                        </p>
                                     </div>
                                 </div>
                             
