@@ -10,7 +10,7 @@
 
 
     <div class="hero-wrap absolute inset-0 w-full h-full grid place-items-center">
-        <div class="font-title text-white container max-w-screen-xl h-[20%] w-2/4 grid place-items-center  mx-auto my-auto px-4 sm:px-2 border-t-4 border-b-4 border-white">
+        <div class="font-title text-white container max-w-screen-xl h-[20%] w-2/4 grid place-items-center  mx-auto my-auto px-4 sm:px-2 border-t-2 border-b-2 border-white">
             <h1 class="font-title font-normal text-center text-4xl text-white">DISCOVER MALDIVES WITH US</h1>
         </div>
     </div>

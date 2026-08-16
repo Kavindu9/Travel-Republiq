@@ -35,7 +35,7 @@
 
                             <!-- </a>  -->
                                 <div class="service-content text-center">
-                                    <h5 class="font-title font-normal text-4xl md:text-3xl text-[#1f2b3a] mb-2 text-center">
+                                    <h5 class="font-title font-normal text-3xl md:text-2xl text-[#1f2b3a] mb-2 text-center">
                                         <?php echo $title; ?>
                                     </h5>
                                 </div>
@@ -49,16 +49,16 @@
 </section>
 <section class="lg:py-10 py-5">
     <div class="max-w-screen-lg mx-auto px-4">
-        <h2 class="font-title text-4xl md:text-5xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
+        <h2 class="font-title text-4xl md:text-3xl font-normal text-[#1f2b3a] mb-8 tracking-wide text-center">
             Our Process
         </h2>
-        <div class="lg:py-6 py-4 font-body text-xl leading-[2.2rem] text-center"><?php echo the_field('process_details'); ?></div>
+        <div class="lg:py-6 py-4 font-body text-xl font-normal leading-[2.2rem] text-center"><?php echo the_field('process_details'); ?></div>
         <div class="lg:py-6 py-4">
             <h2 class="font-title font-normal text-5xl md:text-4xl text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
         </div>
         <div class="lg:py-6 py-4">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
-                <div class="bg-[#f5f5f5] p-7 rounded-lg text-justify font-body text-xl leading-[2.2rem]" style="min-width: 280px;">
+                <div class="bg-[#f5f5f5] p-7 rounded-lg text-justify font-body text-xl font-normal leading-[2.2rem]" style="min-width: 280px;">
                     <?php echo the_field('benefits_details'); ?>
                 </div>
                 <div class="bg-[#f5f5f5] p-7 rounded-lg text-white flex flex-col justify-center" style="min-width: 280px; background: linear-gradient(to right, #16717B, #80915A);">
