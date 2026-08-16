@@ -33,10 +33,10 @@ if( have_rows('home_slider') ): ?>
                         <?php endif; ?>
 
                         <?php if($subheading): ?>
-                            <p class="font-body font-normal text-xl text-white"><?php echo esc_html($subheading); ?></p>
+                            <p class="font-body text-xl font-normal text-white tracking-[1px] leading-[28px]"><?php echo esc_html($subheading); ?></p>
                         <?php endif; ?>
 
-                        <a href="<?php echo site_url('/contact'); ?>" class="hero-btn font-body text-base">
+                        <a href="<?php echo site_url('/contact'); ?>" class="hero-btn font-body text-base font-normal">
                             Contact Us
                             <span class="arrow">↗</span>
                         </a>

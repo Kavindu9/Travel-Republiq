@@ -37,7 +37,7 @@
 
                     <!-- Text -->
                     <div class="w-full lg:w-1/2">
-                        <h2 class="font-body font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide">
+                        <h2 class="font-title font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide">
                             <?php echo $title; ?>
                         </h2>
                         <div class="font-body text-xl font-normal space-y-6 text-[#1f2b3a] leading-[2.2rem] prose max-w-none">
@@ -115,7 +115,7 @@
 
                     <!-- Text -->
                     <div class="w-full lg:w-1/2">
-                        <h2 class="font-body font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide">
+                        <h2 class="font-title font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide">
                             <?php echo $title; ?>
                         </h2>
                         <div class="font-body text-xl font-normal space-y-6 text-[#1f2b3a] leading-[2.2rem] prose max-w-none">
@@ -132,7 +132,7 @@
 </section>
 <section class="lg:py-10 py-5">
     <div class="max-w-screen-xl mx-auto px-4">
-        <h2 class="font-body font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide text-center">
+        <h2 class="font-title font-normal text-4xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide text-center">
             PLAN YOUR PERFECT TRIP
         </h2>
 

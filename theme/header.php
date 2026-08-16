@@ -27,9 +27,9 @@
 
 	<style type="text/tailwindcss">
 		@theme {
-			--font-title: "cormorant", "sans-serif";
+			--font-title: "grande", "sans-serif";
 			/* --font-body: "quicksand", "sans-serif";  */
-			--font-body: "cormorant", "sans-serif";
+			--font-body: "gill", "sans-serif";
 
 		}
 
