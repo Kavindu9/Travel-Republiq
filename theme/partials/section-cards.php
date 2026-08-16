@@ -12,11 +12,11 @@
                         <div class="m-3.5" bis_skin_checked="1">
                             <h3 style=""><img class="object-cover aspect-[9/11] rounded-md" src="<?php echo esc_url($card_image); ?>"></h3>
                             <?php if($card_title): ?>
-                                <h3 class="font-body font-normal text-2xl m-4" style="color: rgb(34, 34, 34);"><?php echo esc_html($card_title); ?></h3>
+                                <h3 class="font-title font-normal text-2xl m-4" style="color: rgb(34, 34, 34);"><?php echo esc_html($card_title); ?></h3>
                             <?php endif; ?>    
-                            <hr style="width: 80%; margin: 0 auto 15px; border: 1.5px solid #00000078; border-radius: 5px;">
+                            <hr style="width: 80%; margin: 0 auto 15px; border: 0.75px solid #00000078; border-radius: 5px;">
                             <?php if($card_details): ?>
-                                <div class="font-body text-xl font-normal space-y-6" style="letter-spacing: -0.03em; padding: 0px 15px 15px; color: #000;">
+                                <div class="font-body text-xl font-normal space-y-6 tracking-[1px] leading-[28px]" style="padding: 0px 15px 15px; color: #000;">
                                     <?php echo $card_details; ?>
                                 </div>
                             <?php endif; ?>

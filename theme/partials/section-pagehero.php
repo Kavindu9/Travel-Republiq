@@ -17,7 +17,7 @@
     background-image: url('<?php the_field('page_hero_image');  ?>');
     background-color: #000000;
 ">
-    <div class="breadcrumb-overlay absolute top-1/2 text-left" style="
+     <!--<div class="breadcrumb-overlay absolute top-1/2 text-left" style="
         left: 30px;
         transform: translateY(-50%);
         color: #fff;
@@ -25,16 +25,16 @@
         padding: 20px 30px;
         border-radius: 10px;
     ">
-                    <!-- <h2 style="margin: 0 0 10px 0;">News</h2> -->
-      <ol style="list-style: none; padding: 0; margin: 0;">
-          <!-- <li style="display: inline;">
+                    <h2 style="margin: 0 0 10px 0;">News</h2> -->
+      <!--<ol style="list-style: none; padding: 0; margin: 0;">
+           <li style="display: inline;">
               <a href="https://aquamarine-hippopotamus-184653.hostingersite.com" style="color: #fff;">
                   Home
               </a>
-          </li> -->
+          </li> 
           <li class="font-body font-normal text-2xl" style="display: inline;"><?php the_title(); ?></li>
-      </ol>
-    </div>
+      </ol>-->
+    <!-- </div> -->
 </div>
 
 <style>
