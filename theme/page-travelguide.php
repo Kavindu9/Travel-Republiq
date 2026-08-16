@@ -37,7 +37,7 @@
 
                     <!-- Text -->
                     <div class="w-full lg:w-1/2">
-                        <h2 class="font-title font-normal text-3xl md:text-2xl text-[#1f2b3a] mb-8 tracking-wide">
+                        <h2 class="font-title font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide">
                             <?php echo $title; ?>
                         </h2>
                         <div class="font-body text-xl font-normal space-y-6 text-[#1f2b3a] leading-[2.2rem] prose max-w-none">
@@ -115,7 +115,7 @@
 
                     <!-- Text -->
                     <div class="w-full lg:w-1/2">
-                        <h2 class="font-title font-normal text-3xl md:text-2xl text-[#1f2b3a] mb-8 tracking-wide">
+                        <h2 class="font-title font-normal text-2xl md:text-3xl text-[#1f2b3a] mb-8 tracking-wide">
                             <?php echo $title; ?>
                         </h2>
                         <div class="font-body text-xl font-normal space-y-6 text-[#1f2b3a] leading-[2.2rem] prose max-w-none">
