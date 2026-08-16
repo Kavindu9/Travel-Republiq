@@ -385,7 +385,7 @@
                     </div> -->
                     <div class="footer-links lg:w-[45%] w-full">
                         <div class="footer-title">
-                            <h4 class="font-body font-normal text-2xl md:text-3xl text-white">Newsletter</h4>
+                            <h4 class="font-body font-normal text-2xl md:text-3xl text-white uppercase">Newsletter</h4>
                             <form>
                                 <div class="form-row">
                                     <div class="form-group">
