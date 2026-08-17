@@ -35,7 +35,7 @@
 
                             <!-- </a>  -->
                                 <div class="service-content text-center">
-                                    <h5 class="font-title font-normal text-3xl md:text-2xl text-[#1f2b3a] mb-2 text-center">
+                                    <h5 class="font-title font-normal text-3xl md:text-2xl text-[#1f2b3a] mb-2 text-center uppercase">
                                         <?php echo $title; ?>
                                     </h5>
                                 </div>
@@ -97,7 +97,7 @@
             <div>
                 <h3 class="text-left font-title text-5xl md:text-4xl" style="margin-bottom: 10px;"><?php echo esc_html( get_field('ex_title') ); ?></h3>
                 <div class="text-justify font-body text-xl" style="color: #555; line-height: 1.6;"><?php the_field('exp_desc'); ?></div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5" style="max-width: 600px;">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5 py-3" style="max-width: 600px;">
                     <?php
                         if(have_rows('experience_fearures')) :
                             while( have_rows('experience_fearures')) : the_row();
@@ -154,7 +154,7 @@
 
 <style>
 .service-carousel{
-    margin:60px auto;
+    margin:15px;
 }
 
 .carousel-cell{

@@ -22,7 +22,7 @@
 
                     <div class="lg:w-[45%] w-full">
                         <div class="footer-contact-card">
-                            <h4 class="font-body font-normal text-2xl md:text-3xl text-white footer-contact-title">CONTACT US</h4>
+                            <h4 class="font-body font-normal text-2xl md:text-xl text-white footer-contact-title">CONTACT US</h4>
 
                                                             <div class="contact-item">
                                     <span class="ci-icon">
@@ -48,8 +48,8 @@
 									</span>
                                     <div class="ci-text">
                                         <div class="ci-label font-body text-xl font-normal uppercase">Phone Number</div>
-                                        <p class="ci-value">
-                                            <span dir="ltr" class="font-body text-lg font-normal">+960 7562222</span>
+                                        <p class="ci-value font-body text-lg font-normal not-italic">
+                                            <span dir="ltr" class="">+960 7562222</span>
                                         </p>
                                     </div>
                                 </div>
@@ -385,7 +385,7 @@
                     </div> -->
                     <div class="footer-links lg:w-[45%] w-full">
                         <div class="footer-title">
-                            <h4 class="font-body font-normal text-2xl md:text-3xl text-white uppercase">Newsletter</h4>
+                            <h4 class="font-body font-normal text-2xl md:text-xl text-white uppercase">Newsletter</h4>
                             <form>
                                 <div class="form-row">
                                     <div class="form-group">
@@ -458,7 +458,7 @@
         <div class="footer-bottom" style="background-color: #080a0c;">
         <div class="container flex py-1">
             <div class="me-md-auto text-center text-md-start">
-                <div class="copyright font-body text-lg font-normal" style="text-align: center; font-family: 'Montserrat', sans-serif; color: #ffffff; margin-top: 8px;">
+                <div class="copyright font-body text-base font-normal" style="text-align: center; font-family: 'Montserrat', sans-serif; color: #ffffff; margin-top: 8px;">
                     © 2025&nbsp;Travel RepubliQ.&nbsp;All Rights Reserved
                 </div>
 
