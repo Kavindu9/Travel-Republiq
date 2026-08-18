@@ -160,7 +160,7 @@
                         </div>
                         
                     <?php endif; ?>
-                    <h3 class="font-body font-normal text-xl md:text-2xl text-[#1f2b3a] mb-2 uppercase">
+                    <h3 class="font-body font-normal text-lg md:text-xl text-[#1f2b3a] mb-2 uppercase">
                         <?php echo $card_title; ?>
                     </h3>
                     <p class="text-[#1f2b3a] font-body text-xl font-normal leading-[1.8rem]">

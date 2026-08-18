@@ -389,16 +389,16 @@
                             <form>
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label class="font-body text-lg text-white">First Name*</label>
+                                        <label class="font-body text-xl font-normal text-white">First Name*</label>
                                         <input type="text" name="first_name" required="">
                                     <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; display: initial !important; float: left !important;"></div></div>
                                     <div class="form-group">
-                                        <label class="font-body text-lg text-white">Last Name*</label>
+                                        <label class="font-body text-xl font-normal text-white">Last Name*</label>
                                         <input type="text" name="last_name" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="font-body text-lg text-white">Email Address*</label>
+                                    <label class="font-body text-xl font-normal text-white">Email Address*</label>
                                     <input type="email" name="email" required="">
                                 </div>
                                 <div style="margin-top: 20px;">
@@ -458,7 +458,7 @@
         <div class="footer-bottom" style="background-color: #080a0c;">
         <div class="container flex py-1">
             <div class="me-md-auto text-center text-md-start">
-                <div class="copyright font-body text-base font-normal" style="text-align: center; font-family: 'Montserrat', sans-serif; color: #ffffff; margin-top: 8px;">
+                <div class="copyright font-body text-sm font-normal" style="text-align: center; font-family: 'Montserrat', sans-serif; color: #ffffff; margin-top: 8px;">
                     © 2025&nbsp;Travel RepubliQ.&nbsp;All Rights Reserved
                 </div>
 
