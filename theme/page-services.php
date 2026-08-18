@@ -163,9 +163,10 @@
 }
 
 .service-carousel .carousel-cell{
-    width:33.333%;
+    width:calc((100% - 64px) / 3);
     padding:15px;
 }
+
 
 .service-card{
     /* display:flex; */
@@ -240,7 +241,7 @@
 
 .service-carousel .carousel-cell{
 
-    width:50%;
+    width:calc((100% - 32px) / 2);
 
 }
 
