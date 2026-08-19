@@ -108,7 +108,7 @@
                         </ul>
                     </div>
                   <div class="flex items-center justify-between mt-auto">
-                    <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent font-body lg:font-base text-lg font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+                    <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent font-body font-base font-normal rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                       Book Now
                     </a>
                   </div>
@@ -157,7 +157,7 @@
                             </ul>
                         </div>
                     <div class="flex items-center justify-between mt-auto">
-                        <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+                        <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-body font-normal rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                         Book Now
                         </a>
                     </div>
