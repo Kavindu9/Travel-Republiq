@@ -16,7 +16,7 @@
                             <?php endif; ?>    
                             <hr style="width: 80%; margin: 0 auto 15px; border: 0.75px solid #00000078; border-radius: 5px;">
                             <?php if($card_details): ?>
-                                <div class="font-body text-xl font-normal space-y-6 tracking-[1px] leading-[28px]" style="padding: 0px 15px 15px; color: #000;">
+                                <div class="font-body text-lg font-normal space-y-6 tracking-[1px] leading-[28px]" style="padding: 0px 15px 15px; color: #000;">
                                     <?php echo $card_details; ?>
                                 </div>
                             <?php endif; ?>
