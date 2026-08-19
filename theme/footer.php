@@ -18,7 +18,7 @@
 <footer id="footer" style="background: linear-gradient(to right, #15717B,#80915A);">
             <div class="footer-top">
             <div class="container mx-auto px-10">
-                <div class="row  flex flex-wrap gap-4 lg:flex-row flex-col">
+                <div class="row  flex flex-wrap gap-4 justify-between lg:flex-row flex-col">
 
                     <div class="lg:w-[45%] w-full">
                         <div class="footer-contact-card">
@@ -383,22 +383,22 @@
                             </li>
                         </ul>
                     </div> -->
-                    <div class="footer-links lg:w-[45%] w-full">
+                    <div class="footer-links lg:w-[35%] w-full">
                         <div class="footer-title">
                             <h4 class="font-body font-normal text-2xl md:text-xl text-white uppercase">Newsletter</h4>
                             <form>
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label class="font-body text-xl font-normal text-white">First Name*</label>
+                                        <label class="font-body text-base font-normal text-white">First Name*</label>
                                         <input type="text" name="first_name" required="">
                                     <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; display: initial !important; float: left !important;"></div></div>
                                     <div class="form-group">
-                                        <label class="font-body text-xl font-normal text-white">Last Name*</label>
+                                        <label class="font-body text-base font-normal text-white">Last Name*</label>
                                         <input type="text" name="last_name" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="font-body text-xl font-normal text-white">Email Address*</label>
+                                    <label class="font-body text-base font-normal text-white">Email Address*</label>
                                     <input type="email" name="email" required="">
                                 </div>
                                 <div style="margin-top: 20px;">

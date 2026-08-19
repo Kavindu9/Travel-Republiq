@@ -213,6 +213,7 @@
                                 $news_title = get_sub_field('news_title');
                                 $news_des = get_sub_field('news_details');
                                 $news_link = get_sub_field('news_url');
+                                $news_date = get_sub_field('published_date');
                     ?>
 
                         <a href="<?php echo $news_link; ?>" class="text-decoration-none text-reset">
@@ -225,7 +226,7 @@
                                         <p class="font-body text-xl leading-[2.2rem] mb-2 text-muted" style="font-weight:500;">
                                             <?php echo $news_des; ?>
                                         </p>
-                                        <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php the_date( 'd M y', '', '' ); ?></div>
+                                        <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php echo $news_date; ?></div>
                                     </div>
                                 </div>
                             </div>
