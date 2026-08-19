@@ -29,9 +29,9 @@
       
       <!-- Desktop Menu (Hidden on Mobile) -->
       <div class="hidden md:flex space-x-6">
-        <a href="<?php echo esc_url(home_url('/travel-guide/')); ?>" class="font-body text-base text-black hover:text-blue-400">TRAVEL GUIDE</a>
-        <a href="<?php echo esc_url(home_url('/services/')); ?>" class="font-body text-base text-black hover:text-blue-400">SERVICES</a>
-        <a href="<?php echo esc_url(home_url('/spo/')); ?>" class="font-body text-base text-black hover:text-blue-400">SPO</a>
+        <a href="<?php echo esc_url(home_url('/travel-guide/')); ?>" class="font-body text-lg text-black hover:text-blue-400">TRAVEL GUIDE</a>
+        <a href="<?php echo esc_url(home_url('/services/')); ?>" class="font-body text-lg text-black hover:text-blue-400">SERVICES</a>
+        <a href="<?php echo esc_url(home_url('/spo/')); ?>" class="font-body text-lg text-black hover:text-blue-400">SPO</a>
         <!-- <a href="#" class="text-black hover:text-blue-400">Contact</a> -->
       </div>
       
