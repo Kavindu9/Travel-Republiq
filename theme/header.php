@@ -143,6 +143,10 @@
 			font-size: 1.25rem;
 			font-weight: 400;
 		}
+
+		#masthead {
+			padding: 30px 0 0 !important;
+		}
 	</style>
 
 	<?php get_template_part( 'template-parts/layout/header', 'content' ); ?>

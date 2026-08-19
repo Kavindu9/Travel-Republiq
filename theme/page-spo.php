@@ -108,7 +108,7 @@
                         </ul>
                     </div>
                   <div class="flex items-center justify-between mt-auto">
-                    <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent font-body lg:font-base text-lg font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+                    <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent font-body font-base font-normal rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                       Book Now
                     </a>
                   </div>
@@ -157,7 +157,7 @@
                             </ul>
                         </div>
                     <div class="flex items-center justify-between mt-auto">
-                        <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+                        <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-body font-normal rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                         Book Now
                         </a>
                     </div>
@@ -213,6 +213,7 @@
                                 $news_title = get_sub_field('news_title');
                                 $news_des = get_sub_field('news_details');
                                 $news_link = get_sub_field('news_url');
+                                $news_date = get_sub_field('published_date');
                     ?>
 
                         <a href="<?php echo $news_link; ?>" class="text-decoration-none text-reset">
@@ -225,7 +226,7 @@
                                         <p class="font-body text-xl leading-[2.2rem] mb-2 text-muted" style="font-weight:500;">
                                             <?php echo $news_des; ?>
                                         </p>
-                                        <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php the_date( 'd M y', '', '' ); ?></div>
+                                        <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php echo $news_date; ?></div>
                                     </div>
                                 </div>
                             </div>
