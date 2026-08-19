@@ -48,7 +48,7 @@
 
         <!-- </div> -->
 
-        <div class="space-y-16">
+        <div class="max-w-[85%] mx-auto space-y-16">
           
             <?php 
               $rows = get_field('offer');
@@ -73,7 +73,7 @@
                     class="h-full w-full object-cover"
                   />
                 </div>
-                <div class="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+                <div class="lg:w-1/2 p-5 lg:p-8 flex flex-col justify-center">
                   <h3 class="font-title lg:text-2xl text-3xl font-normal text-gray-900 mb-3">
                   <?php echo $offer_name; ?>
                   </h3>
@@ -108,7 +108,7 @@
                         </ul>
                     </div>
                   <div class="flex items-center justify-between mt-auto">
-                    <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent font-body lg:font-base text-lg font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+                    <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent font-body font-base font-normal rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                       Book Now
                     </a>
                   </div>
@@ -123,8 +123,8 @@
                         class="h-full w-full object-cover"
                     />
                     </div>
-                    <div class="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-                    <h3 class="font-title lg:text-2xl text-3xl font-normal text-gray-900 mb-3">
+                    <div class="lg:w-1/2 p-5 lg:p-8 flex flex-col justify-center">
+                    <h3 class="font-title lg:text-2xl text-3xl font-normal text-gray-900 mb-3 uppercase">
                     <?php echo $offer_name; ?>
                     </h3>
                     <?php if($offer_desc):  ?>
@@ -157,7 +157,7 @@
                             </ul>
                         </div>
                     <div class="flex items-center justify-between mt-auto">
-                        <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
+                        <a href="<?php echo $Link; ?>" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-body font-normal rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700">
                         Book Now
                         </a>
                     </div>
@@ -202,7 +202,7 @@
 
 <section>
     <div class="news-panel bg-[#eef6f6] rounded-4 p-4 p-lg-5 my-4">
-        <h2 class="font-title font-normal text-2xl md:text-3xl  text-center mb-4 mb-lg-5"><?php echo esc_html( get_field('page_headline') ); ?></h2>
+        <h2 class="font-title font-normal text-2xl md:text-3xl  text-center mb-4 mb-lg-5 uppercase"><?php echo esc_html( get_field('page_headline') ); ?></h2>
 
             <div class="flex flex-col flex-wrap mt-6 mx-6 items-start gap-6 align-items-start">
                 <div class="flex flex-col gap-5">
@@ -213,19 +213,20 @@
                                 $news_title = get_sub_field('news_title');
                                 $news_des = get_sub_field('news_details');
                                 $news_link = get_sub_field('news_url');
+                                $news_date = get_sub_field('published_date');
                     ?>
 
                         <a href="<?php echo $news_link; ?>" class="text-decoration-none text-reset">
                             <div class="bg-white rounded-4 shadow-sm p-3 p-lg-4 mb-3">
                                 <div class="d-flex gap-3">
                                     <div class="flex-grow-1">
-                                        <h3 class="font-title font-normal md:text-2xl text-3xl mb-2" style="font-weight:700;">
+                                        <h3 class="font-title font-normal md:text-2xl text-3xl mb-2" style="">
                                             <?php echo $news_title; ?>
                                         </h3>
                                         <p class="font-body text-xl leading-[2.2rem] mb-2 text-muted" style="font-weight:500;">
                                             <?php echo $news_des; ?>
                                         </p>
-                                        <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php the_date( 'd M y', '', '' ); ?></div>
+                                        <div class="small font-body text-base leading-[2.2rem]" style="color:#0f766e"><?php echo $news_date; ?></div>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +260,9 @@
 </section>
 
 <style>
-
+.prose{
+    font-size: 1rem !important;
+}
 .top-banner-section {
   display: grid;
   grid-template-columns: 1fr; 

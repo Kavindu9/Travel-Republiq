@@ -12,14 +12,7 @@
 <section class="lg:py-12 py-6">
     <div class="max-w-screen-lg mx-auto px-4">
         <!-- Flickity Slider -->
-        <div class="service-carousel" 
-         data-flickity='{
-            "groupCells": true,
-            "groupCells": 3,
-            "contain": true,
-            "cellAlign": "left",
-            "wrapAround": true
-        }'>
+        <div class="service-carousel">
                 <?php
                 if(have_rows('our_services')) :
                     while( have_rows('our_services')) : the_row();
@@ -54,7 +47,7 @@
         </h2>
         <div class="lg:py-6 py-4 font-body text-xl font-normal leading-[2.2rem] text-center"><?php echo the_field('process_details'); ?></div>
         <div class="lg:py-6 py-4">
-            <h2 class="font-title font-normal text-5xl md:text-4xl text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
+            <h2 class="font-title font-normal text-3xl md:text-4xl text-center"><?php echo esc_html( get_field('benefits_title') ); ?></h2>
         </div>
         <div class="lg:py-6 py-4">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
@@ -97,7 +90,7 @@
             <div>
                 <h3 class="text-left font-title text-5xl md:text-4xl" style="margin-bottom: 10px;"><?php echo esc_html( get_field('ex_title') ); ?></h3>
                 <div class="text-justify font-body text-xl" style="color: #555; line-height: 1.6;"><?php the_field('exp_desc'); ?></div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5" style="max-width: 600px;">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5 py-3" style="max-width: 600px;">
                     <?php
                         if(have_rows('experience_fearures')) :
                             while( have_rows('experience_fearures')) : the_row();
@@ -153,140 +146,176 @@
 </section>
 
 <style>
-.service-carousel{
-    margin:60px auto;
+.service-carousel {
+    margin: 60px auto;
 }
 
-.carousel-cell{
-    width:380px;
-    margin-right:32px;
+.service-carousel .carousel-cell {
+    width: 33.333%;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.service-carousel .carousel-cell{
-    width:33.333%;
-    padding:15px;
+.service-card {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    background: #fff;
 }
 
-.service-card{
-    /* display:flex; */
-    flex-direction:column;
-
-    height:380px;      /* Fixed card height */
-    background:#fff;
+.carousel-cell:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
 }
 
-.carousel-cell:hover{
-
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
+.service-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.service-card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    flex-shrink:0;
+.service-content {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.service-content{
-    padding:15px;
-    flex:1;
-    /* display:flex; */
-    align-items:flex-start;
+.service-content h5 {
+    margin: 0;
 }
 
-.service-content h3{
-    font-size:42px;
-    line-height:1.15;
-    font-weight:700;
-    margin:0;
-}
 
-.flickity-button{
+/* =========================
+   TABLET
+   ========================= */
 
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    background:#6F8E5B;
+@media (max-width: 1024px) {
+
+    .service-carousel .carousel-cell {
+        width: 50%;
+    }
 
 }
 
-.flickity-button:hover{
 
-    background:#5f7f4b;
+/* =========================
+   MOBILE
+   ========================= */
 
-}
+@media (max-width: 768px) {
 
-.flickity-button-icon{
+    .service-carousel .carousel-cell {
+        width: 100%;
+    }
 
-    fill:#fff;
+    .service-card {
+        height: 340px;
+    }
 
-}
+    .service-card img {
+        height: 220px;
+    }
 
-.flickity-prev-next-button.previous{
+    .flickity-prev-next-button.previous {
+        left: 5px;
+    }
 
-    left:-30px;
-
-}
-
-.flickity-prev-next-button.next{
-
-    right:-30px;
-
-}
-
-@media(max-width:1024px){
-
-.service-carousel .carousel-cell{
-
-    width:50%;
+    .flickity-prev-next-button.next {
+        right: 5px;
+    }
 
 }
 
-.service-content h3{
 
-    font-size:30px;
+/* =========================
+   FLICKITY BUTTONS
+   ========================= */
 
+.flickity-button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #6F8E5B;
 }
 
+.flickity-button:hover {
+    background: #5f7f4b;
 }
 
-@media(max-width:768px){
-
-.service-carousel .carousel-cell{
-
-    width:100%;
-
+.flickity-button-icon {
+    fill: #fff;
 }
 
-.service-card img{
-
-    height:220px;
-
+.flickity-prev-next-button.previous {
+    left: -30px;
 }
 
-.service-content h3{
-
-    font-size:24px;
-
-}
-
-.flickity-prev-next-button.previous{
-
-    left:5px;
-
-}
-
-.flickity-prev-next-button.next{
-
-    right:5px;
-
-}
-
+.flickity-prev-next-button.next {
+    right: -30px;
 }
 
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const carousels = document.querySelectorAll('.service-carousel');
+
+    carousels.forEach(function (carousel) {
+
+        let flkty;
+
+        function getGroupCells() {
+
+            if (window.innerWidth <= 768) {
+                return 1;
+            }
+
+            if (window.innerWidth <= 1024) {
+                return 2;
+            }
+
+            return 3;
+        }
+
+        function initFlickity() {
+
+            if (flkty) {
+                flkty.destroy();
+            }
+
+            flkty = new Flickity(carousel, {
+                groupCells: getGroupCells(),
+                contain: true,
+                cellAlign: 'left',
+                wrapAround: true,
+                prevNextButtons: true,
+                pageDots: true
+            });
+
+        }
+
+        initFlickity();
+
+        let resizeTimer;
+
+        window.addEventListener('resize', function () {
+
+            clearTimeout(resizeTimer);
+
+            resizeTimer = setTimeout(function () {
+                initFlickity();
+            }, 200);
+
+        });
+
+    });
+
+});
+</script>
 
 
 <?php endwhile; ?>

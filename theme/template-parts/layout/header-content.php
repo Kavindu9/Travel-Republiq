@@ -12,12 +12,12 @@
 <header id="masthead">
 	<!-- Navigation Container -->
 <nav class="bg-[#fff] text-white" style="box-shadow: 0 2px 15px rgba(0, 0, 0, .1);">
-  <div class="container mx-auto px-4 py-4">
+  <div class="container mx-auto px-4 py-2">
     <div class="flex items-center justify-between h-16">
       
       <!-- Logo -->
       <div class="text-xl font-bold">
-        <a class="" href="https://aquamarine-hippopotamus-184653.hostingersite.com"><img alt="Travel RepubliQ Maldives" src="https://aquamarine-hippopotamus-184653.hostingersite.com/wp-content/uploads/2026/07/17549031248133.webp" class="img-fluid" width="230" height="50"></a>
+        <a class="" href="https://trmaldives.com/"><img alt="Travel RepubliQ Maldives" src="https://trmaldives.com/wp-content/uploads/2026/07/17549031248133.webp" class="img-fluid w-[55%]" width="230" height="45"></a>
       </div>
       
       <!-- Hamburger Button (Mobile Only) -->
