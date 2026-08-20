@@ -53,7 +53,8 @@
                             "wrapAround": true,
                             "imagesLoaded": true,
                             "pageDots": true,
-                            "prevNextButtons": true
+                            "prevNextButtons": true,
+                            "adaptiveHeight": false
                         }'>
                             <?php foreach( $gallery_slider as $image ): ?>
                                 <div class="travel-guide-carousel-cell">
@@ -92,7 +93,8 @@
                             "wrapAround": true,
                             "imagesLoaded": true,
                             "pageDots": true,
-                            "prevNextButtons": true
+                            "prevNextButtons": true,
+                            "adaptiveHeight": false
                         }'>
                             <?php foreach( $gallery_slider as $image ): ?>
                                 <div class="travel-guide-carousel-cell">
@@ -174,27 +176,77 @@
 </section>
 
 <style>
-    .travel-guide-carousel {
+.travel-guide-carousel {
     width: 100%;
-    height: 100%;
+    position: relative;
 }
 
+/* Flickity viewport */
 .travel-guide-carousel .flickity-viewport {
-    height: 100% !important;
+    width: 100%;
 }
 
+/* Each slide */
 .travel-guide-carousel-cell {
     width: 100%;
-    height: 100%;
     margin-right: 0;
+    overflow: hidden;
 }
 
+/* Images */
 .travel-guide-carousel-image {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
 }
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 1023px) {
+
+    .travel-guide-carousel {
+        height: 350px;
+    }
+
+    .travel-guide-carousel .flickity-viewport {
+        height: 350px !important;
+    }
+
+    .travel-guide-carousel-cell {
+        height: 350px;
+    }
+
+    .travel-guide-carousel-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+}
+
+
+/* =========================
+   DESKTOP
+   ========================= */
+@media (min-width: 1024px) {
+
+    .travel-guide-carousel {
+        height: 100%;
+        min-height: 450px;
+    }
+
+    .travel-guide-carousel .flickity-viewport {
+        height: 100% !important;
+    }
+
+    .travel-guide-carousel-cell {
+        height: 100%;
+    }
+
+}
+
 
 </style>
 
