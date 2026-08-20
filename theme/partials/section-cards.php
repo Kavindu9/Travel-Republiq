@@ -1,6 +1,6 @@
 <section class="lg:py-10 py-8">
     <div class="max-w-screen-lg mx-auto px-4 ">
-        <div class="grid grid-cols-3 gap-8">
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
             <?php while( have_rows('cards') ): the_row(); 
                     $card_title = get_sub_field('card_title');
                     $card_details = get_sub_field('card_details');
