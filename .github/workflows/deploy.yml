@@ -29,23 +29,23 @@ jobs:
       # - name: Deploy via SFTP
       #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
 
-      - name: Deploy to Staging
-        if: github.ref == 'refs/heads/develop'
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5 
-        with:
-          server: ${{ secrets.STAGING_HOST }}
-          username: ${{ secrets.STAGING_USERNAME }}
-          password: ${{ secrets.STAGING_PASSWORD }}
-          protocol: ftp
-          port: 21
-          server-dir: /wp-content/themes/travel-republiq/
-          retries: 3
-          local-dir: ./theme/
-          exclude: |
-            **/.git*
-            **/.github*
-            **/node_modules/** 
-            **/*.map
+      # - name: Deploy to Staging
+      #   if: github.ref == 'refs/heads/develop'
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5 
+      #   with:
+      #     server: ${{ secrets.STAGING_HOST }}
+      #     username: ${{ secrets.STAGING_USERNAME }}
+      #     password: ${{ secrets.STAGING_PASSWORD }}
+      #     protocol: ftp
+      #     port: 21
+      #     server-dir: /wp-content/themes/travel-republiq/
+      #     retries: 3
+      #     local-dir: ./theme/
+      #     exclude: |
+      #       **/.git*
+      #       **/.github*
+      #       **/node_modules/** 
+      #       **/*.map
 
 
       # - name: Deploy to Production

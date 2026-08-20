@@ -20,7 +20,7 @@
             <div class="container mx-auto px-10">
                 <div class="row  flex flex-wrap gap-4 justify-between lg:flex-row flex-col">
 
-                    <div class="lg:w-[45%] w-full">
+                    <div class="lg:w-[40%] w-full">
                         <div class="footer-contact-card">
                             <h4 class="font-body font-normal text-2xl md:text-xl text-white footer-contact-title">CONTACT US</h4>
 
@@ -383,7 +383,7 @@
                             </li>
                         </ul>
                     </div> -->
-                    <div class="footer-links lg:w-[35%] w-full">
+                    <div class="footer-links lg:w-5/12 w-full">
                         <div class="footer-title">
                             <h4 class="font-body font-normal text-2xl md:text-xl text-white uppercase">Newsletter</h4>
                             <!-- <form>
@@ -477,7 +477,7 @@
                             <input type="text" name="LNAME" class="required text inputfield_form" id="mce-LNAME" required="" value="">
                         </div>
                     </div>
-                    <div class="mc-field-group">
+                    <div class="mc-field-group form-group">
                         <label for="mce-EMAIL" class="font-body text-base font-normal">Email Address <span class="asterisk">*</span></label>
                         <input type="email" name="EMAIL" class="required email inputfield_form" id="mce-EMAIL" required="" value="">
                     </div>
@@ -571,7 +571,7 @@
                                 style="width: 56px; height: 56px; background: #4fb0f4; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
                                 <img src="https://travels.mobilesapplication.com/assets/frontend/images/botim.png" alt="Botim"
                                     style="width: 28px; height: 28px;">
-                            </a>
+                            </a>-->
 
                         </div>
 
